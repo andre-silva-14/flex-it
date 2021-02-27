@@ -55,14 +55,14 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     because otherwise their contents wont show on search
     engines where the javascript does not run. 
     This function is being called on Node.JS server of Next.JS*/
-    
+
   const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
   
   return {
     props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted)
+      level: Number(level ?? 1),
+      currentExperience: Number(currentExperience ?? 0),
+      challengesCompleted: Number(challengesCompleted ?? 0)
     }
   }  
 }
