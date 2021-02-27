@@ -68,7 +68,7 @@
     color: var(--title);
 }
 
-.abandonCountdownButton:hover {
+.abandonCountdownButton:not(:disabled):hover {
     background: var(--red);
     color: var(--white);
 }
