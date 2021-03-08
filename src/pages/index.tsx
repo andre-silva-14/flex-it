@@ -3,7 +3,6 @@ import { GetServerSideProps } from "next";
 
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
-import ExperienceBar from "../components/ExperienceBar";
 import { ChallengeBox } from "../components/ChallengeBox";
 import { Profile } from "../components/Profile";
 
@@ -30,8 +29,6 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Flex.it</title>
         </Head>
-
-        <ExperienceBar/>
 
         <CountdownProvider>
           <section className={styles.leftContainer}>

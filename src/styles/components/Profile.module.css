@@ -3,10 +3,41 @@
     align-items: center;
 }
 
-.profileContainer > img {
-    width: 5.5rem;
-    height: 5.5rem;
+.profileImage {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage > img {
+    width: 75%;
     border-radius: 50%;
+}
+
+.profileImage svg {
+    position: absolute;
+}
+
+.profileImage svg path {
+    will-change: auto;
+    stroke-width: 14px;
+    stroke-miterlimit: round;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 850ms ease-in-out;
+}
+
+.backgroundExperienceBar {
+    stroke: #ccc;
+    fill: none;
+}
+
+.foregroundExperienceBar {
+    stroke: url("#linear-gradient");
+    fill: none;
 }
 
 .profileContainer div {
